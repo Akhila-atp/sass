@@ -1,0 +1,19 @@
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin line {
+    height: 50px;
+    width: 5px;
+    display: inline-block;
+    background-color: $color-white;
+}
+
+@mixin dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: $color-orange;
+}

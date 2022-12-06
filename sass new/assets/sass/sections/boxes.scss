@@ -1,0 +1,70 @@
+@import "../abstracts/variable";
+@import"../abstracts/mixin";
+.box {
+    .box1 {
+        background-color: $color-blue;
+        border-radius: 20px 0 0 20px;
+        height: 300px;
+    }
+    .line {
+        transform: rotate(-90deg);
+        margin-right: 75px;
+        margin-top: 100px;
+        height: 150px;
+    }
+    .box1 h5 {
+        padding: 100px;
+        margin: 0 5px;
+    }
+    .box2 {
+        background-color: $color-orange;
+        // padding: 40px 80px;
+        height: 300px;
+        margin-left: -25px
+    }
+    .line2 {
+        @include line;
+        transform: rotate(-90deg);
+        height: 150px;
+        margin-left: 42px;
+    }
+    .box2 h5 {
+        padding-top: 170px;
+    }
+    .box2 p {
+        text-align: left;
+        margin: 20px 40px;
+    }
+    .box3 {
+        height: 300px;
+        background-color: bisque;
+        margin-left: -25px;
+        color: $color-blue;
+    }
+    .box3 h5 {
+        padding-top: 200px;
+    }
+    .box3 p {
+        text-align: left;
+        margin: 20px 40px;
+    }
+    .box4 {
+        height: 300px;
+        background-color: rgb(3, 51, 51);
+        margin-left: -25px;
+        border-radius: 0 20px 20px 0;
+    }
+    .line3 {
+        @include line;
+        transform: rotate(-90deg);
+        height: 150px;
+        margin-right: 75px;
+    }
+    .box4 h5 {
+        padding-top: 180px;
+    }
+    .box4 p {
+        text-align: left;
+        margin: 20px 40px;
+    }
+}

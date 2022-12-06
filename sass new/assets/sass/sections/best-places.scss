@@ -1,0 +1,22 @@
+@import "../abstracts/variable";
+@import"../abstracts/mixin";
+.best-places {
+    h1 {
+        padding-top: 80px;
+        font-size: 7rem;
+        // max-width: 50px;
+        font-weight: 100;
+    }
+    .orange {
+        width: 40px;
+        height: 70px;
+        border-radius: 20px 20px 20px 20px;
+        transform: rotate(50deg);
+        background-color: $color-orange;
+    }
+    .line {
+        transform: rotate(-70deg);
+        height: 30px;
+        border-radius: 5px 0 5px 0;
+    }
+}

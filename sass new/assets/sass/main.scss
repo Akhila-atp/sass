@@ -1,0 +1,49 @@
+@import './abstracts/variable';
+@import "./abstracts/mixin";
+@import "./sections/best-places.scss";
+@import "./sections/services.scss";
+@import "./sections/boxes.scss";
+// @import "./sections/media.scss";
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bg {
+    background-color: black;
+    color: $color-white;
+}
+
+.line {
+    @include line;
+}
+
+.orange-dot {
+    @include dot
+}
+
+@media(max-width:425px) {
+    .best-places {
+        h1 {
+            font-size: 25px;
+        }
+        .orange {
+            width: 20px;
+            height: 35px;
+            border-radius: 10px 10px 10px 10px;
+            transform: rotate(50deg);
+            background-color: $color-orange;
+        }
+        .line {
+            transform: rotate(-70deg);
+            height: 15px;
+        }
+    }
+    .services {
+        font-size: 10px;
+    }
+    img {
+        margin: 20px 0;
+    }
+}
